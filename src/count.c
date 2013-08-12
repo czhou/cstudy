@@ -3,8 +3,16 @@
 main(){
 	long nc;
 	nc = 0;
-	while(getchar() != EOF){
-		++nc;
+	int c ;
+	while(c = getchar()){
+		if(c == EOF){
+			break;
+		}else{
+
+			if(c == '\n'){
+				++nc;
+			}
+		}
 	}
 	printf("%ld\n", nc);
 }
