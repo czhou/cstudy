@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <limits.h>
 main(){
+	getchar();
 	unsigned int test = 2;
 	unsigned int printv = 0;
 	int i;
@@ -24,8 +25,17 @@ main(){
 	printf("Size of unsigned int %u\n", UINT_MAX);    /* RB */
 	printf("Size of unsigned short %u\n", USHRT_MAX); /* SF */
 	
+	helloworld();
 	unsigned int qq = 4294967295;
 	printf("shit is %u\n", qq);
 	return 0;
 
+}
+
+void helloworld(){
+	hello();
+}
+
+void hello(){
+	dddd;
 }
